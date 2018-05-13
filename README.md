@@ -1,11 +1,12 @@
-# PostgresSQL vs MS SQL full table scan perf test on .NET Core 2.0.7
+# PostgreSQL vs MS SQL full table scan perf test on .NET Core 2.0.7
 
 Benchmarked with [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) library.
-Th benchmark basicly issues a simple `SELECT * FROM Persons WHERE LastName = 'Michael'` to the servers.
+Th benchmark basicly issues a simple `SELECT * FROM Persons WHERE FirstName = 'Michael'` to the servers.
 Tested on 500.000 rows.
 
 ### Versions
 **PostgresSQL server**: 10.4, compiled by Visual C++ build 1800, 64-bit
+
 **SQL Server**: Microsoft SQL Server 2014 - 12.0.2269.0 (X64)
 
 ## MS SQL Result
